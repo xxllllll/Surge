@@ -7,7 +7,7 @@ TrafficStatistics = script-name=TrafficStatistics, title="流量统计", content
 # > 网络状态
 NetInfoPanel=title="",content="",style=info,script-name=net-info-panel.js,update-interval=1
 # > Flush DNS
-flushDNS = script-name=flushDNS, title="Flush DNS", content="请刷新", update-interval=600
+#flushDNS = script-name=flushDNS, title="Flush DNS", content="请刷新", update-interval=600
 # > YouTube Premium 解锁检测
 ytb_check = script-name=ytb_check, title="YouTube 解锁检测", update-interval=600
 # > Netflix 解锁检测
@@ -21,7 +21,7 @@ TrafficStatistics = type=generic,timeout=10,script-path= https://raw.githubuserc
 # > 网络状态
 net-info-panel.js=script-path=https://raw.githubusercontent.com/xxllllll/Surge/main/networkCheck.js,type=generic
 # > Flush DNS
-flushDNS = type=generic,timeout=5,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/flushDNS.js,argument=title=DNS FLush&icon=arrow.clockwise&color=#3d3d5b
+#flushDNS = type=generic,timeout=5,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/flushDNS.js,argument=title=DNS FLush&icon=arrow.clockwise&color=#3d3d5b
 # > YouTube Premium 解锁检测
 ytb_check = type=generic,timeout=5,script-path=https://raw.githubusercontent.com/xxllllll/Surge/main/youtube_premium_check.js
 # > Netflix 解锁检测
