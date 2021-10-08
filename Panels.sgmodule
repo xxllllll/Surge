@@ -1,5 +1,5 @@
 #!name=信息面板
-#!desc=https://github.com/xxllllll/Surge/blob/main/Panels.sgmodule
+#!desc=自用的Surge信息面板！
 
 [Panel]
 # > 流量统计
@@ -7,13 +7,13 @@ TrafficStatistics = script-name=TrafficStatistics, title="流量统计", content
 # > 网络状态
 net-info-panel = script-name=net-info-panel, title="网络状态", content="请刷新", style=info
 # > Flush DNS
-flushDNS = script-name=flushDNS, title="Flush DNS", content="请刷新", update-interval=600
-# > Netflix 解锁检测
-nf_check = script-name=nf_check, title="Netflix 解锁检测", content="请刷新", update-interval=10
+#flushDNS = script-name=flushDNS, title="Flush DNS", content="请刷新", update-interval=600
 # > YouTube Premium 解锁检测
-ytb_check = script-name=ytb_check, title="YouTube 解锁检测", update-interval=10
+ytb_check = script-name=ytb_check, title="YouTube 解锁检测", update-interval=600
+# > Netflix 解锁检测
+nf_check = script-name=nf_check, title="Netflix 解锁检测", content="请刷新", update-interval=600
 # > Disney+ 解锁检测
-disney_check = script-name=disney_check, title=Disney+ 解锁检测, content=请刷新, update-interval=10
+disney_check = script-name=disney_check, title=Disney+ 解锁检测, content=请刷新, update-interval=600
 
 [Script]
 # > 流量统计
@@ -21,10 +21,10 @@ TrafficStatistics = type=generic,timeout=10,script-path= https://raw.githubuserc
 # > 网络状态
 net-info-panel = type=generic,timeout=5,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tools/Panels/NetInfo/net-info-panel.js
 # > Flush DNS
-flushDNS = type=generic,timeout=5,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/flushDNS.js,argument=title=DNS FLush&icon=arrow.clockwise&color=#3d3d5b
-# > Netflix 解锁检测
-nf_check = type=generic,timeout=5,script-path=https://gist.githubusercontent.com/Hyseen/b06e911a41036ebc36acf04ddebe7b9a/raw/nf_check.js
+#flushDNS = type=generic,timeout=5,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/flushDNS.js,argument=title=DNS FLush&icon=arrow.clockwise&color=#3d3d5b
 # > YouTube Premium 解锁检测
 ytb_check = type=generic,timeout=5,script-path=https://raw.githubusercontent.com/xxllllll/Surge/main/youtube_premium_check.js
+# > Netflix 解锁检测
+nf_check = type=generic,timeout=5,script-path=https://gist.githubusercontent.com/Hyseen/b06e911a41036ebc36acf04ddebe7b9a/raw/nf_check.js
 # > Disney+ 解锁检测
 disney_check = type=generic,timeout=5,script-path=https://gist.githubusercontent.com/Hyseen/729fc4c3ac28c3f2e7c4a832d81780f3/raw/disney_check.js
