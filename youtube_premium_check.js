@@ -26,7 +26,7 @@ const BASE_URL = 'https://www.youtube.com/premium'
 
 const DEFAULT_OPTIONS = {
   title: 'YouTube Premium 解锁检测',
-  availableContent: '支持 Premium，地区：#REGION_FLAG# #REGION_NAME#',
+  availableContent: '支持 Premium ➟ #REGION_FLAG# #REGION_NAME#',
   availableIcon: '',
   availableIconColor: '',
   availableStyle: 'good',
