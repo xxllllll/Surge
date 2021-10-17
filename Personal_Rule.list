@@ -2,3 +2,9 @@
 DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,nike.com
 DOMAIN-SUFFIX,992.gay
+# > OneDrive
+PROCESS-NAME,OneDrive
+DOMAIN-SUFFIX,1drv.com
+DOMAIN-SUFFIX,onedrive.com
+DOMAIN-SUFFIX,storage.live.com
+DOMAIN,oneclient.sfx.ms
