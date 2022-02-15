@@ -15,7 +15,7 @@ ytb_check = script-name=ytb_check, title="YouTube 解锁检测", update-interval
 # > Netflix 解锁检测
 nf_check = script-name=nf_check, title="Netflix 解锁检测", content="请刷新", update-interval=600
 # > Disney+ 解锁检测
-#disney_check = script-name=disney_check, title=Disney+ 解锁检测, content=请刷新, update-interval=600
+disney_check = script-name=disney_check, title=Disney+ 解锁检测, content=请刷新, update-interval=600
 
 [Script]
 # > 节假日提醒
@@ -31,7 +31,7 @@ ytb_check = type=generic,timeout=5,script-path=https://raw.githubusercontent.com
 # > Netflix 解锁检测
 nf_check = type=generic,timeout=5,script-path=https://raw.githubusercontent.com/xxllllll/Surge/main/nf_check.js
 # > Disney+ 解锁检测
-#disney_check = type=generic,timeout=5,script-path=https://gist.githubusercontent.com/Hyseen/729fc4c3ac28c3f2e7c4a832d81780f3/raw/disney_check.js
+disney_check = type=generic,timeout=5,script-path=https://gist.githubusercontent.com/Hyseen/729fc4c3ac28c3f2e7c4a832d81780f3/raw/disney_check.js
 
 [Host]
 ip-api.com = 208.95.112.1
