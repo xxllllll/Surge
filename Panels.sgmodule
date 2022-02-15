@@ -33,5 +33,5 @@ nf_check = type=generic,timeout=5,script-path=https://raw.githubusercontent.com/
 # > Disney+ 解锁检测
 #disney_check = type=generic,timeout=5,script-path=https://gist.githubusercontent.com/Hyseen/729fc4c3ac28c3f2e7c4a832d81780f3/raw/disney_check.js
 
-[Host]
-ip-api.com = 208.95.112.1
+#[Host]
+#ip-api.com = 208.95.112.1
