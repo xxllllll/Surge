@@ -2,6 +2,8 @@
 #!desc=自用的Surge信息面板！
 
 [Panel]
+# > 节假日查询
+timecard = script-name=timecard,update-interval=3600
 # > 流量统计
 TrafficStatistics = script-name=TrafficStatistics, title="流量统计", content="请刷新", update-interval=1
 # > 网络状态
@@ -16,6 +18,8 @@ nf_check = script-name=nf_check, title="Netflix 解锁检测", content="请刷�
 #disney_check = script-name=disney_check, title=Disney+ 解锁检测, content=请刷新, update-interval=600
 
 [Script]
+# > 节假日提醒
+timecard = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/timecard.js
 # > 流量统计
 TrafficStatistics = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/trafficstatistics.js ,argument=icon=arrow.up.arrow.down.circle&color=#5d84f8
 # > 网络状态
