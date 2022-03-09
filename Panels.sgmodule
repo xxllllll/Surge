@@ -5,7 +5,7 @@
 # > 节假日查询
 timecard = script-name=timecard,update-interval=3600
 # > 流量统计
-TrafficStatistics = script-name=TrafficStatistics, title="流量统计", content="请刷新", update-interval=1
+#TrafficStatistics = script-name=TrafficStatistics, title="流量统计", content="请刷新", update-interval=1
 # > 网络状态
 NetInfoPanel=title="",content="",style=info,script-name=net-info-panel.js,update-interval=1
 # > Flush DNS
@@ -21,7 +21,7 @@ nf_check = script-name=nf_check, title="Netflix 解锁检测", content="请刷�
 # > 节假日提醒
 timecard = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/timecard.js
 # > 流量统计
-TrafficStatistics = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/trafficstatistics.js ,argument=icon=arrow.up.arrow.down.circle&color=#5d84f8
+#TrafficStatistics = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/trafficstatistics.js ,argument=icon=arrow.up.arrow.down.circle&color=#5d84f8
 # > 网络状态
 net-info-panel.js=script-path=https://raw.githubusercontent.com/xxllllll/Surge/main/networkCheck.js,type=generic
 # > Flush DNS
