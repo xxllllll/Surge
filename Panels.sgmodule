@@ -22,7 +22,7 @@ nf_check = script-name=nf_check, title="Netflix 解锁检测", content="请刷�
 [Script]
 
 # > 机场信息
-Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/xxllllll/Surge/main/sub_info_panel.js,script-update-interval=0,argument=url=https%3A%2F%2Fb.p-p.men%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3Dc7158b4ce1c9aecb4c1e3a2a8e9a5be8&reset_day=9&title=DH-DNS&icon=signature&color=#000000
+Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/xxllllll/Surge/main/sub_info_panel.js,script-update-interval=0,argument=url=&reset_day=9&title=DH-DNS&icon=signature&color=#000000
 # > 节假日提醒
 #timecard = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/timecard.js
 # > 流量统计
