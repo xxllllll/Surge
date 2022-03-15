@@ -74,7 +74,7 @@
          (v6.primaryRouter && wifi.ssid ? `Router IPv6 : ${v6.primaryRouter}\n` : '') +
          `节点 IP : ${info.query}\n` +
          `节点 ISP : ${info.isp}\n` +
-         `节点 位置 : ${getFlagEmoji(info.countryCode)} | ${info.country} - ${info.city
+         `节点 位置 : ${getFlagEmoji(info.countryCode)} | ${info.country}
          }`,
        icon: wifi.ssid ? 'wifi' : 'simcard',
        'icon-color': wifi.ssid ? '#0084fc' : '#F9BF45',
