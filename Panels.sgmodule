@@ -2,8 +2,6 @@
 #!desc=自用的Surge信息面板！
 
 [Panel]
-# > 机场信息
-Sub_info = script-name=Sub_info,update-interval=600
 # > 节假日查询
 #timecard = script-name=timecard,update-interval=3600
 # > 流量统计
@@ -20,9 +18,6 @@ nf_check = script-name=nf_check, title="Netflix 解锁检测", content="请刷�
 #disney_check = script-name=disney_check, title=Disney+ 解锁检测, content=请刷新, update-interval=600
 
 [Script]
-
-# > 机场信息
-Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/xxllllll/Surge/main/sub_info_panel.js,script-update-interval=0,argument=url=&reset_day=9&title=DH-DNS&icon=signature&color=#000000
 # > 节假日提醒
 #timecard = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/smartmimi/conf/master/surge/timecard.js
 # > 流量统计
