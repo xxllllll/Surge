@@ -26,10 +26,6 @@ let args = getArgs();
   let content = [`用量：${bytesToSize(used)} | ${bytesToSize(total)}`];
 
   let now = new Date();
-  let hour = now.getHours();
-  let minutes = now.getMinutes();
-  hour = hour > 9 ? hour : "0" + hour;
-  minutes = minutes > 9 ? minutes : "0" + minutes;
 
   $done({
     title: `${args.title}`,
