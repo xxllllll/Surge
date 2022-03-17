@@ -23,7 +23,7 @@ let args = getArgs();
   if (!info) $done();
   let used = info.download + info.upload;
   let total = info.total;
-  let content = [`用量：${bytesToSize(used)} | ${bytesToSize(total)}`];
+  let content = [`User: ${bytesToSize(used)} | ${bytesToSize(total)}`];
 
   let now = new Date();
 
