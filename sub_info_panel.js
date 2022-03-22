@@ -21,10 +21,15 @@ let args = getArgs();
 (async () => {
   let info = await getDataInfo(args.url);
   if (!info) $done();
+  
+  let resetDayLeft = getRmainingDays(parseInt(args["reset_day"]));
   let used = info.download + info.upload;
   let total = info.total;
-  let content = [`Used: ${bytesToSize(used)} | ${bytesToSize(total)}`];
-
+  let remain = total - used;
+  
+  #let content = [`Used: ${bytesToSize(used)} | ${bytesToSize(total)}`];
+  let content = [`Remain: ${bytesToSize(remain)} | 剩余${resetDayLeft}天`]; 
+  
   let now = new Date();
 
   $done({
