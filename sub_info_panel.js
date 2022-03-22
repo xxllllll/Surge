@@ -28,7 +28,7 @@ let args = getArgs();
   let total = info.total;
   let remain = total - used;
   
-  let content = [`Remain: ${bytesToSize(remain)} | 剩余${resetDayLeft}天`]; 
+  let content = [`Remain: ${bytesToSize(remain)} >>> 剩余${resetDayLeft} day`]; 
   
   let now = new Date();
 
