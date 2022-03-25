@@ -1,5 +1,5 @@
-let ID = ""
-let Key = ""
+let ID = " "
+let Key = " "
 
 let testurl = "https://testflight.apple.com/v3/accounts/" + Key + "/ru/"
 let header = {
