@@ -65,7 +65,7 @@ async function check_youtube_premium() {
       }
     })
     .catch((error) => {
-      youtube_check_result += '检测失败'
+      youtube_check_result += 'Detection failed'
     })
 
   return youtube_check_result
@@ -136,7 +136,7 @@ async function check_netflix() {
         netflix_check_result += 'Netflix Unlocked'
         return
       }
-      netflix_check_result += '检测失败'
+      netflix_check_result += 'Detection failed'
     })
 
   return netflix_check_result
