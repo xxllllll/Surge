@@ -61,7 +61,7 @@ async function check_youtube_premium() {
       if (code === 'Not Available') {
         youtube_check_result += 'Youtube Unlocked'
       } else {
-        youtube_check_result += 'YouTube Premium : ' + code.toUpperCase()
+        youtube_check_result += 'YouTube Premium, ' + '地区: ' + code.toUpperCase()
       }
     })
     .catch((error) => {
@@ -117,7 +117,7 @@ async function check_netflix() {
       if (code === 'Not Found') {
         return inner_check(80018499)
       }
-      netflix_check_result += 'Netflix Full : ' + code.toUpperCase()
+      netflix_check_result += 'Netflix Full, ' + '地区: ' + code.toUpperCase()
       return Promise.reject('BreakSignal')
     })
     .then((code) => {
@@ -125,7 +125,7 @@ async function check_netflix() {
         return Promise.reject('Not Available')
       }
 
-      netflix_check_result += 'Netflix only : ' + code.toUpperCase()
+      netflix_check_result += 'Netflix only, ' + '地区: ' + code.toUpperCase()
       return Promise.reject('BreakSignal')
     })
     .catch((error) => {
