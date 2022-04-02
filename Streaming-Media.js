@@ -9,7 +9,7 @@ const REQUEST_HEADERS = {
     title: '𝗦𝘁𝗿𝗲𝗮𝗺𝗶𝗻𝗴',
     content: '',
     icon: 'checkmark.seal.fill',
-    'icon-color': '#85e085',
+    'icon-color': '#33cc33',
   }
   await Promise.all([check_youtube_premium(), check_netflix()])
     .then((result) => {
