@@ -57,12 +57,12 @@ if (!v4.primaryAddress) {
         $done({
             title: wifi.ssid ? wifi.ssid : cellularInfo,
             content:
-            (v4.primaryAddress ? `IPv4 :𝙄𝙋𝙫�ipdd : ${v4.primaryAddress} \n` : '') +
+            (v4.primaryAddress ? `IPv4 : ${v4.primaryAddress} \n` : '') +
 //                (v6.primaryAddress ? `IPv6 : ${v6.primaryAddress}\n` : '') +
 //                (v4.primaryRouter && wifi.ssid ? `Router IPv4 : ${v4.primaryRouter}\n` : '') +
 //                (v6.primaryRouter && wifi.ssid ? `Router IPv6 : ${v6.primaryRouter}\n` : '') +
 //                `IP :  ${getFlagEmoji(info.countryCode)} | ${info.query}`, // \n` +
-                `𝙄𝙣𝙛�I : ${Info :getFlagEmoji(info.countryCode)}・${info.city}・${info.isp}`,// \n`  +
+                `Info : ${getFlagEmoji(info.countryCode)}・${info.city}・${info.isp}`,// \n`  +
 //                `节点信息 : ${getFlagEmoji(info.countryCode)} | ${info.country} - ${info.city}`,
             icon: wifi.ssid ? 'wifi' : 'simcard',
             'icon-color': wifi.ssid ? '#007dfd' : '#F9BF45',
