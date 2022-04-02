@@ -8,12 +8,12 @@ const REQUEST_HEADERS = {
   let panel_result = {
     title: '𝗦𝘁𝗿𝗲𝗮𝗺𝗶𝗻𝗴',
     content: '',
-    icon: 'tv.and.mediabox',
-    'icon-color': '#7CFC00',
+    icon: 'checkmark.seal.fill',
+    'icon-color': '#66ff66',
   }
-  await Promise.all([check_netflix(), check_youtube_premium()])
+  await Promise.all([check_youtube_premium(), check_netflix()])
     .then((result) => {
-      let content = result.join('   ')
+      let content = result.join('\n')
       panel_result['content'] = content
     })
     .finally(() => {
@@ -59,9 +59,9 @@ async function check_youtube_premium() {
   await inner_check()
     .then((code) => {
       if (code === 'Not Available') {
-        youtube_check_result += 'YouTube未解锁'
+        youtube_check_result += '𝗬𝗼𝘂𝗧𝘂𝗯𝗲 𝗨𝗻𝗹𝗼𝗰𝗸𝗲𝗱 :'+ code.toUpperCase()
       } else {
-        youtube_check_result += 'YouTube解锁 : ' + code.toUpperCase()
+        youtube_check_result += '𝗬𝗼𝘂𝗧𝘂𝗯𝗲 𝗣𝗿𝗲𝗺𝗶𝘂𝗺 : ' + code.toUpperCase()
       }
     })
     .catch((error) => {
@@ -117,7 +117,7 @@ async function check_netflix() {
       if (code === 'Not Found') {
         return inner_check(80018499)
       }
-      netflix_check_result += 'Netflix解锁 : ' + code.toUpperCase()
+      netflix_check_result += '𝗡𝗲𝘁𝗳𝗹𝗶𝘅 𝗙𝘂𝗹𝗹 : ' + code.toUpperCase()
       return Promise.reject('BreakSignal')
     })
     .then((code) => {
@@ -125,15 +125,15 @@ async function check_netflix() {
         return Promise.reject('Not Available')
       }
 
-      netflix_check_result += 'Netflix仅自制 :' + code.toUpperCase()
+      netflix_check_result += '𝗡𝗲𝘁𝗳𝗹𝗶𝘅 𝗼𝗻𝗹𝘆 :' + code.toUpperCase()
       return Promise.reject('BreakSignal')
     })
     .catch((error) => {
       if (error === 'BreakSignal') {
-        return
+        return 
       }
       if (error === 'Not Available') {
-        netflix_check_result += 'Netflix未解锁'
+        netflix_check_result += '𝗡𝗲𝘁𝗳𝗹𝗶𝘅 𝗨𝗻𝗹𝗼𝗰𝗸𝗲𝗱 :' + code.toUpperCase()
         return
       }
       netflix_check_result += '检测失败'
