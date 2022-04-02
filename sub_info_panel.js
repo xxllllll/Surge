@@ -28,7 +28,7 @@ let args = getArgs();
   let total = info.total;
   let remain = total - used;
   
-  let content = [`Overage: ${bytesToSize(remain)}`]; 
+  let content = [`Overage : ${bytesToSize(remain)}`]; 
   
   let now = new Date();
 
