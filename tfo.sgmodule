@@ -1,6 +1,0 @@
-#!name=强制tfo
-#!desc=Wi-Fi和数据蜂窝强制
-
-[SSID Setting]
-TYPE:WIFI tfo-behaviour=force-enabled
-TYPE:CELLULAR tfo-behaviour=force-enabled
