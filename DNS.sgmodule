@@ -1,5 +1,0 @@
-#!name=Out-DNS
-#!desc=出门在外使用的DNS
-[General]
-# > DNS 服务器
-dns-server = 119.29.29.29, 223.5.5.5, system
