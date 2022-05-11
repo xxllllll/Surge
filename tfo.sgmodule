@@ -2,6 +2,6 @@
 #!desc=Wi-Fi和数据蜂窝强制
 
 [SSID Setting]
-TYPE:WIFI tfo-behaviour=force-enabled
+SSID:Misaka* tfo-behaviour=force-enabled, cellular-fallback=hybrid
+TYPE:WIFI tfo-behaviour=force-disabled
 TYPE:CELLULAR tfo-behaviour=force-disabled
-
