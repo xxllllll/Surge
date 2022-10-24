@@ -7,5 +7,5 @@ hostname = %INSERT% trade-acs.m.taobao.com
 
 [Script]
 # > Taobao App 显示历史价格 by yichahucha
-// tb_price.js = type=http-request,requires-body=1,pattern=^http:\/\/.+\/amdc\/mobileDispatch,script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
+tb_price.js = type=http-request,requires-body=1,pattern=^http:\/\/.+\/amdc\/mobileDispatch,script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
 tb_price.js = type=http-response,requires-body=1,pattern=^https?:\/\/trade-acs\.m\.taobao\.com\/gw\/mtop\.taobao\.detail\.getdetail,script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
