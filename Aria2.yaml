@@ -1,0 +1,6 @@
+# NAME: Aria2
+
+payload:
+  - DOMAIN-KEYWORD,aria2
+  - PROCESS-NAME,aria2c
+  - PROCESS-NAME,aria2c.exe
